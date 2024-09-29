@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST OF HTML CSS</title>
+    <link rel="stylesheet" href="external.css">
+    <style>
+        /* used for text property */
+        #text{
+            text-align: center;
+            text-decoration: underline;
+            text-transform: uppercase;
+            color: red
+        }
+       /* id selector */
+       #ID{
+            color: blue;
+            text-align: center;
+        }
+       /* class selector */
+        p{
+            color: aqua;
+            text-align: center;
+        }
+        /* class selector */
+        .class{
+            color: blueviolet;
+            text-align: center;
+        }
+        /* internal css  */
+        #internal{
+            color: aquamarine;
+        }
+        /* display property */
+        #display{
+            display: inline-block;
+        }
+        table,th,td{
+             border: 3px solid black;
+        }
+        /* this is example of background image */
+        #background{
+            background-image: url(/test/download.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+    </style>
+</head>
+<body>
+<!-- this is example of text property -->
+<p id="text">This is paragraph for text properties</p> <br> 
+<hr>
+<!-- this is example of background image of div element -->
+<div style="background-image: url(/test/download.jpeg); display: inline-block">
+    <h3>this is div paragraph</h3>
+</div><br>
+<hr>
+  <!-- example of unordered list items-->
+  <ul>
+    <li>ritesh</li>
+    <li>pratik</li>
+    <li>sujal</li>
+    <li>aditya</li>
+  </ul><br>
+<hr>
+<!-- this is id selector -->
+  <p id="ID">This is implimentation of id selector</p>
+<!-- this is element selector -->
+  <p>This is implimentation of element selector </p>
+<!-- this is class selector -->
+ <p class="class">This is implimentation of class selector</p><br>
+ <br><hr>
+ <!-- this is example of display element -->
+  <h2 id="display">Example of display element</h2><br><hr>
+  <!-- this is example of iframe -->
+  <iframe src="https://www.revolutionit.in/" width="600px" height="500px" style="border: 3px solid black;"></iframe><br><hr>
+  <!-- this is example of table -->
+  <table style="margin-left: auto; margin-right: auto;">
+    <tr>
+        <th>NAME</th>
+        <th>Roll No</th>
+        <th>AGE</th>
+    </tr>
+    <tr>
+        <td>Ritesh</td>
+        <td>2</td>
+        <td>22</td>
+    </tr>
+    <tr>
+        <td>Pratik</td>
+        <td>3</td>
+        <td>24</td>
+    </tr>
+  </table><br><hr>
+  <!-- this is example of css methods -->
+ <span id="internal">This is internal css example</span><br><br>
+ <span style="color: red;">this is inline css example</span><br><br>
+ <span id="External">This is example of external css </span>
+</body>
+</html>y

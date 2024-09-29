@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            opacity: 0.5;
+        }
+        p{  
+            font-size: 30px;
+            text-shadow: 10px 10px 10px   red;
+        }
+        #shadow{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            box-shadow: 10px 10px 10px 10px  red;
+        }
+        #glow{
+        
+            height: 200px;
+            width: 400px;
+            font-size: 60px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+            glow{
+            from{
+                text-shadow: 0 0 10px #fff, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue, 0 0 50px blue, 0 0 60px blue, 0 0 70px blue;
+            }
+            to{
+                text-shadow: 0 0 20px #fff, 0 0 30px orange, 0 0 40px orange, 0 0 50px orange, 0 0 60px orange, 0 0 70px orange, 0 0 80px orange;
+            }
+        }
+        div.A{
+            width: 200px;
+            height: 200px;
+            margin-left: 50px;
+            background-color: aqua;
+            transform: rotate(30deg);
+        }
+        div.B{
+            width: 200px;
+            height: 200px;
+            margin-left: 50px;
+            background-color: aqua;
+            transform: matrix(1, -0.3, 0, 1, 0, 0);
+        }
+        div.C{
+            width: 200px;
+            height: 200px;
+            margin-left: 50px;
+            background-color: aqua;
+            transform: skew( 30deg);
+        }
+        div.ani{
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+            animation-name: demo;
+            animation-duration: 4s;
+            position: relative;
+            animation-iteration-count: infinite;
+           
+        }
+        @keyframes demo{
+            0%{
+                background-color: aqua;
+                left: 0px;
+                top: 0px;
+            }
+            25%{
+                background-color: blue;
+                left: 200px;
+                top: 0px;
+            }
+            50%{
+                background-color: red;
+                left: 200px;
+                top: 200px;
+            }
+            75%{
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+            100%{
+                background-color: aqua;
+                left: 0px;
+                top: 0px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- CSS opacity  -->
+    <h2>CSS Opacity </h2>
+    <img src="WhatsApp Image 2024-09-23 at 3.18.11 PM.jpeg" alt="FLower"><br><br><hr>
+   <!--CSS Shadow  -->
+   <!-- TExt shadow -->
+    <h2>CSS text shadow</h2>
+   <p>This is demo paragraph for text shadow example</p><br>
+   <hr>
+   <!-- box shadow -->
+    <h2>CSS box shadow</h2>
+   <div id="shadow">THis is div elemnet box and having shodow </div>
+   <br><br><hr>
+   <!-- glowing text effect -->
+    <h2>CSS glowing text effect</h2>
+    <div id="glow"> GLOW TEXT</div><br><br><hr>
+    <!-- CSS transform -->
+     <br><br>
+     <h2>CSS transform</h2><br><br>
+     <div class="A">DEMO TRANSFORM ROTATE TO 30 DEGREE</div><br><br>  <br>
+     <div class="B">DEMO TRANSFORM matrix</div><br><br><br>
+     <div class="C">DEMO TRANSFROM Skew</div> <br><br><br> <hr>
+     <!-- CSS  animation -->
+      <H1>CSS Animation </H1>
+      <div class="ani"></div>
+</body>
+</html>
