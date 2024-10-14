@@ -7,5 +7,24 @@
 </head>
 <body>
     <script src="session3.js"></script>
+    
+    <ul id="list">
+
+    </ul>
+    <script>
+        let arr = [];
+        for(i=0;i<=70;i++)
+        {
+            arr.push(i);
+        }
+        //console.log(arr);
+        function bindList(index,item)
+        {
+             document.getElementById("list").innerHTML+=`<li>${item}</li>`;
+
+        }
+        arr.forEach(bindList);
+    </script>
+    
 </body>
 </html>
