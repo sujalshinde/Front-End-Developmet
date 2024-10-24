@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Total Percentage</h2>
+    <form id="demo">
+        <label for="tmarks">Total Marks</label>
+        <input type="number" id="tmarks" name="tmarks"><br>
+        <br>
+        <label for="omarks">Obtained Marks</label>
+        <input type="number" id="omarks" name="omarks">
+        <br><br>
+        <button type="submit" id="Calculate" class="btn btn-primary">Show Percentage</button>
+    </form>
+    <p id="display"></p>
+    <br>
+  
+</body>
+<script>
+    let btn=document.getElementById("Calculate")
+    btn.addEventListener("click",function(e){
+        e.preventDefault();
+ let num1= document.getElementById("tmarks").value;
+    let num2= document.getElementById("omarks").value;
+    
+     let show= parseFloat(num2)/parseFloat(num1)*100;
+    document.getElementById("display").innerHTML=show;
+});
+
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <h2>USD to INR Currency Converter</h2>
+
+    <form id="converterForm">
+        <label for="usdAmount">Enter amount in USD:</label>
+        <input type="number" id="usdAmount" placeholder="Enter USD amount" required>
+        <button type="button" onclick="convertToINR()">Convert to INR</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        function convertToINR() {
+            const usdAmount = document.getElementById('usdAmount').value;
+            const conversionRate = 83; 
+            const inrAmount = usdAmount * conversionRate;
+
+            document.getElementById("result").innerText = `INR ${inrAmount.toFixed(2)}`;
+        }
+    </script>
+
+</body>
+</html>

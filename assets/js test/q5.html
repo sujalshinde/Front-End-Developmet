@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Hello Kolhapur</h1>
+        
+    <h3> Click on button to change the background color </h3>
+
+    <button onclick="myFunc()">Click here</button>
+
+    <h2 id="Suja"></h2>
+
+    <script>
+        let result = document.getElementById("suja");
+
+        function RandomColor(color) 
+        {
+            document.body.style.background = color;
+        }
+
+        function myFunc() 
+        {
+           RandomColor('yellow' ,'green');
+            result.innerHTML = "Background Color changed";
+        }        
+    </script>
+
+</body>
+</html>
+
+
+
+

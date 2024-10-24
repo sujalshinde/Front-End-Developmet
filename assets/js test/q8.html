@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Circle Calculator</title>
+</head>
+<body>
+  <h2>Circle Calculator</h2>
+  <form id="circleForm">
+    <label for="radius">Enter Radius:</label>
+    <input type="number" id="radius" name="radius" required><br><br>
+   
+    <button type="submit">Calculate</button>
+  </form>
+  <div id="result"></div>
+
+  <script>
+    const form = document.getElementById("circleForm");
+const radiusInput = document.getElementById("radius");
+const resultDiv = document.getElementById("result");
+
+form.addEventListener("submit",function(e) {
+  e.preventDefault();
+
+  const radius = parseFloat(radiusInput.value);
+
+  if (radius=="" || radius <= 0) {
+    resultDiv.innerHTML = "Please enter a valid positive radius.";
+    return;
+  }
+
+  const area = 3.14 * radius * radius;
+  const circumference = 2 * 3.14 * radius;
+
+  resultDiv.innerHTML = `
+    <p>Area: ${area.toFixed(2)}</p>
+    <p>Circumference: ${circumference.toFixed(2)}</p>`;
+});
+  </script>
+</body>
+
+</html>
