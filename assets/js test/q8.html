@@ -28,11 +28,11 @@ form.addEventListener("submit",function(e) {
     return;
   }
 
-  const area = 3.14 * radius * radius;
+  const area = 3.14 * (radius * radius);
   const circumference = 2 * 3.14 * radius;
 
   resultDiv.innerHTML = `
-    <p>Area: ${area.toFixed(2)}</p>
+     <p>Area: ${area.toFixed(2)}</p>
     <p>Circumference: ${circumference.toFixed(2)}</p>`;
 });
   </script>

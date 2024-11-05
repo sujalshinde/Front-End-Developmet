@@ -20,7 +20,7 @@
                 <div class="form-group my-2">
                     <label>Status:</label>
                 <select class="form-select" aria-label="Default select example" id="txtStatus">
-                    <option value="married">Marrid</option>
+                    <option value="1">Marrid</option>
                     <option value="single">Single</option>
                   </select>
                 </div>              
@@ -55,6 +55,7 @@
             let contact = document.getElementById("txtContact").value;
             let email= document.getElementById("txtEmail").value;
 
+            
             emailcon = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([com\co\.\in])+$/;
             mobilecon = /^\d{10}$/;
            
@@ -65,7 +66,7 @@
                 return true;
             }
 
-            if(Status =="" && Partner =="" )
+            if(Status =="1" && Partner =="" )
             {
                 alert("pls fill spouse name");
                 return false;
