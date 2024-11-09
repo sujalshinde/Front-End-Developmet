@@ -12,33 +12,34 @@
     <style>
         body{
             display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(to bottom, #0099ff 0%, #ffffcc 100%);
+  background: linear-gradient(to bottom, #ecf0f2 0%, #e2e213 100%);
   font-family: 'Ubuntu', sans-serif;
         }
         .card-header{
-            font-size: 25px;
+            font-size: 20px;
             font-weight: 500;
         }
         #enteredword
         {
-            font-size: 25px;
+            font-size: 35px;
             font-weight: 500;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" style="font-family: 'Times New Roman', Times, serif;">
         <div class="row">
+
             <div class="col-md-12">
                 <h1 style="text-align: center;" class="my-4">Dictionary Web Application</h1>
             </div>
-        </div>
-        <hr>
-        <div class="row">
+
+            <hr>
             <div class="col-md-2"></div>
+
             <div class="col-md-8">
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1">Enter Word :</span>
@@ -52,16 +53,37 @@
                         Please Enter Word to Search..!
                       </div>
                   </div>
+            <!-- <div class="col-md-12">
+                <h1 style="text-align: center;" class="my-4">Dictionary Web Application</h1>
+            </div> -->
+        </div>
+        <hr>
+        <div class="row">
+            <!-- <div class="col-md-2"></div> -->
+            <!-- <div class="col-md-8">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Enter Word :</span>
+                    <input type="text" id="txtword" class="form-control" placeholder="Word" >
+                    
+                    <button id="btnsubmit" class="btn btn-primary">Search</button>
+                  </div>
+
+                  <div id="alertdiv" style="display: none;">
+                    <div class="alert alert-danger" role="alert">
+                        Please Enter Word to Search..!
+                      </div>
+                  </div> -->
                   
                   <div id="resultdiv" style="display: none;">
-                      <h3 class="my-4">Showing Results for : <span class="badge rounded-pill bg-success" id="enteredword"></span></h3>
+                      <h4 class="my-4">Showing Results for : <span class="badge rounded-pill bg-success" id="enteredword"></span></h4>
                     <div class="card text-dark bg-light mb-3" style="max-width: 100%;">
                         <div class="card-header">Meaning :</div>
                         <div class="card-body">
-                            <h3 id="meaning"></h3>
+                            <h4 id="meaning"></h4>
                           
                         </div>
                       </div>
+                      <hr>
                       <div class="card text-dark bg-light mb-3" style="max-width: 100%;">
                         <div class="card-header">Noun :</div>
                         <div class="card-body">
@@ -71,6 +93,7 @@
                           
                         </div>
                       </div>
+                      <hr>
                       <div class="card text-dark bg-light mb-3" style="max-width: 100%;">
                         <div class="card-header">Adjective :</div>
                         <div class="card-body">
@@ -80,6 +103,7 @@
                           
                         </div>
                       </div>
+                      <hr>
                       <div class="card text-dark bg-light mb-3" style="max-width: 100%;">
                         <div class="card-header">Adverb :</div>
                         <div class="card-body">
@@ -89,6 +113,7 @@
                           
                         </div>
                       </div>
+                      <hr>
                   </div>
             </div>
         </div>
