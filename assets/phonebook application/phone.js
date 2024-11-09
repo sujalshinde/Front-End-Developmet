@@ -16,7 +16,7 @@ submit.addEventListener("click",function (e){
 
   let contactlist = localStorage.getItem("All Bookings");
 
-  namecon = /^[a-zA-Z]$/;
+  // namecon = /^[a-zA-Z]$/;
   mobilecon = /^\d{10}$/;
 
   if( name.value =="" || contact.value=="" || destination.value==""|| hotel .value=="" || checkin.value=="" || checkout.value=="")
@@ -25,14 +25,14 @@ submit.addEventListener("click",function (e){
     return false;
   }
 
-  if(name.valu!="")
-    {
-        if(!name.value.match(namecon))
-        {
-            alert("Invalid Name");
-            return false;
-        }
-    }
+  // if(name.value!="")
+  //   {
+  //       if(!name.value.match(namecon))
+  //       {
+  //           alert("Invalid Name");
+  //           return false;
+  //       }
+  //   }
 
 
   if(contact.value!="")
@@ -140,6 +140,7 @@ search.addEventListener("input", function(){
     Array.from(noteCards).forEach(function(element){
       
         let cardTxt = element.getElementsByTagName("label")[0].innerText;
+        // 0:[[text:"aditya"]]
         if(cardTxt.includes(inputVal)){
             element.style.display = "block";
         }
