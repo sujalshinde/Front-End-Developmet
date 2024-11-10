@@ -50,7 +50,9 @@ function fetchData(){
     // console.log(api)
     // getting api response and returning it with parsing into js obj and in another 
     // then function calling weatherDetails function with passing api result as an argument
-    fetch(api).then(res => res.json()).then(result => weatherDetails(result)).catch(() =>{
+    fetch(api)
+    .then(res => res.json())
+    .then(result => weatherDetails(result)).catch(() =>{
         infoTxt.innerText = "Something went wrong";
         infoTxt.classList.replace("pending", "error");
     });
