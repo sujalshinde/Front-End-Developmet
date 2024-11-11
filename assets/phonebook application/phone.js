@@ -1,4 +1,4 @@
-console.log()
+// console.log()
 
 showList()
 
@@ -140,7 +140,7 @@ search.addEventListener("input", function(){
     Array.from(noteCards).forEach(function(element){
       
         let cardTxt = element.getElementsByTagName("label")[0].innerText;
-        // 0:[[text:"aditya"]]
+        // 0:[[text:"sujal"]]
         if(cardTxt.includes(inputVal)){
             element.style.display = "block";
         }

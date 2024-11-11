@@ -47,7 +47,6 @@ word.focus();
     
             list2.innerHTML="";
             let listArr2 = data[0]['meanings'][2]['definitions'];
-            
                 listArr2.forEach(element => {
                     list2.innerHTML+=`<li>${element.definition}</li>`;
                 });
